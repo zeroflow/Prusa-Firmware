@@ -306,10 +306,10 @@
 #if defined(E3D_PT100_EXTRUDER_WITH_AMP) || defined(E3D_PT100_EXTRUDER_NO_AMP)
 #define HEATER_0_MAXTEMP 410
 #else
-#define HEATER_0_MAXTEMP 305
+#define HEATER_0_MAXTEMP 350
 #endif
-#define HEATER_1_MAXTEMP 305
-#define HEATER_2_MAXTEMP 305
+#define HEATER_1_MAXTEMP 350
+#define HEATER_2_MAXTEMP 350
 #define BED_MAXTEMP 125
 #define AMBIENT_MAXTEMP 100
 
@@ -434,7 +434,7 @@
 #define BED_ADJUSTMENT_UM_MAX 100
 
 #define MESH_HOME_Z_CALIB 0.2
-#define MESH_HOME_Z_SEARCH 5.0f           // Z lift for homing, mesh bed leveling etc.
+#define MESH_HOME_Z_SEARCH 5.5f           // Z lift for homing, mesh bed leveling etc.
 
 #define X_PROBE_OFFSET_FROM_EXTRUDER 23     // Z probe to nozzle X offset: -left  +right
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 5     // Z probe to nozzle Y offset: -front +behind
