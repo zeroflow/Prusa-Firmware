@@ -1802,6 +1802,8 @@ void loop()
     if (isPrintPaused && saved_printing_type == PRINTING_TYPE_USB) //keep believing that usb is being printed. Prevents accessing dangerous menus while pausing.
 	{
 		is_usb_printing = true;
+		KEEPALIVE_STATE(PAUSED_FOR_USER);
+		host_keepalive();
 	}
     
 #ifdef FANCHECK
